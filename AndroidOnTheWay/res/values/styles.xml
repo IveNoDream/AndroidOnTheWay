@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,5 +16,20 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    
+    <style name="MySwitchButton" parent="@android:style/Widget.CompoundButton">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:thumb">@drawable/sw_thumb</item>
+            <item name="android:track">@drawable/sw_track_bg</item>
+            <item name="android:layout_alignParentRight">true</item>
+            <item name="android:layout_alignParentBottom">true</item>
+            <item name="android:layout_marginBottom">7dp</item>
+            <item name="android:layout_marginRight">20dp</item>
+            <item name="android:textOn"></item>
+            <item name="android:textOff"></item>
+            <item name="android:minWidth">30dp</item>
+            <item name="android:thumbTextPadding">30dp</item>
+            
+    </style>
 </resources>

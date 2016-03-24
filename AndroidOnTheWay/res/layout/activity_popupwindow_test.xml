@@ -1,0 +1,58 @@
+<!-- 主界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_popUpWindow_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出菜单" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="30dp"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/sw_thumb"
+        android:thumbTextPadding="25dp"
+        android:track="@drawable/sw_track_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:src="@drawable/advertisement_big_one"
+            android:scaleType="centerInside"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip" 
+                android:layout_weight="1"
+                android:src="@drawable/advertisement_big_one"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dip" 
+                android:layout_weight="1"
+                android:src="@drawable/advertisement_big_one"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

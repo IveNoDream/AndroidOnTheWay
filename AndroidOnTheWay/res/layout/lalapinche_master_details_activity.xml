@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 点击拼车软件主界面ListView响应界面 -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/button_back"
+            android:gravity="center"
+            android:text="拼车详情"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_back_style"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp" 
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+            android:text="返回" 
+            android:onClick="OnButtonBackClicked"/>
+
+    </RelativeLayout>
+    <ScrollView 
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="10dp"/>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="赵女士"/>
+	        <TextView 
+	            android:id="@+id/textview_master_type"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:paddingRight="10dp"
+	            android:text="乘客"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="5dp"
+	            android:layout_toLeftOf="@id/textview_master_type"
+	            android:text="上下班"/>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <Button 
+	            android:id="@+id/button_master_detail"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/mini_avatar_shadow"
+	            android:text="detail"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/button_master_detail"
+	            android:text="全程约3km"/>
+	
+	        <Button
+	            android:id="@+id/button_tel"
+	            android:layout_width="42dp"
+	            android:layout_height="42dp"
+	            android:layout_alignParentEnd="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/ic_telephone" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/button_tel"
+	            android:paddingRight="20dp"
+	            android:layout_toLeftOf="@+id/button_tel"
+	            android:text="021-123456" />
+	
+	    </RelativeLayout>
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="10dp"/>
+		<LinearLayout 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/corners_top"		    
+		    android:orientation="horizontal">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"
+		        android:layout_weight="1"
+		        android:text="出发"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_leave"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:paddingRight="5dp"
+		        android:layout_weight="8"
+		        android:gravity="right"
+		        android:text="嘉定南门"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/broken_line"/>
+		<LinearLayout 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#E3E3E3"
+		    android:orientation="horizontal">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"
+		        android:layout_weight="1"
+		        android:text="到达"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_arrive"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:paddingRight="5dp"
+		        android:layout_weight="8"
+		        android:gravity="right"
+		        android:text="叶城路768"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/broken_line"/>
+		<LinearLayout 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#E3E3E3"
+		    android:orientation="horizontal">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:paddingLeft="5dp"
+		        android:text="时间"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:layout_weight="8"
+		        android:paddingRight="5dp"
+		        android:gravity="right"
+		        android:text="06:00 - 16:00"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		    <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:background="@drawable/broken_line"/>
+		<LinearLayout 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/corners_bottom"
+		    android:orientation="horizontal">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:paddingLeft="5dp"
+		        android:text="费用"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_coast"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:layout_weight="8"
+		        android:paddingRight="5dp"
+		        android:gravity="right"
+		        android:text="10"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+	    
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="10dp"/>
+		<LinearLayout 
+		    android:paddingTop="20dp"
+		    android:paddingBottom="20dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/corners_top_bottom">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:paddingLeft="5dp"
+		        android:text="附言"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_postscript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:layout_weight="8"
+		        android:paddingRight="5dp"
+		        android:gravity="right"
+		        android:text="的点点滴滴答滴答滴答"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="10dp"/>
+		<LinearLayout 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="@drawable/corners_top_bottom">
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:paddingLeft="5dp"
+		        android:text="求车"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:id="@+id/textView_request_car"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="0dp"
+		        android:layout_weight="8"
+		        android:paddingRight="5dp"
+		        android:gravity="right"
+		        android:text="随便"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+		<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="10dp"/>
+	    <Button
+	        android:id="@+id/button_map_path"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/map_route_prev"
+	        android:text="Button" />
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popover_background"
+    android:layout_gravity="clip_vertical"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_bluetooth_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        android:text="设置"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/textview_click_style"
+        android:onClick="OnTextViewClicked"/>
+    <TextView 
+        android:id="@+id/tv_theme_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        android:text="蓝牙设置"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/textview_click_style"
+        android:onClick="OnTextViewClicked"/>
+
+</LinearLayout>

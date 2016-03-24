@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拼车软件拼车类型界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_together_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/textView_together_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button_together_back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="拼车类型"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_together_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back_style"
+            android:onClick="OnButtonBackClicked"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="返回" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_together_type_center"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/line_publishlinetype" />
+
+    <TextView
+        android:id="@+id/textView_together_type_center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="常用路线" />
+
+    <TextView
+        android:id="@+id/textView_long_distance_together"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_longdistance_together"
+        android:layout_alignRight="@+id/button_longdistance_together"
+        android:layout_below="@+id/button_longdistance_together"
+        android:gravity="center"
+        android:text="长途拼车" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_long_distance_together"
+        android:layout_alignBottom="@+id/textView_long_distance_together"
+        android:layout_alignLeft="@+id/button_go_back_airport"
+        android:layout_alignRight="@+id/button_go_back_airport"
+        android:gravity="center"
+        android:text="机场来回" />
+
+    <TextView
+        android:id="@+id/textView_go_back_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_go_back_work"
+        android:layout_alignRight="@+id/button_go_back_work"
+        android:layout_below="@+id/button_together_now"
+        android:gravity="center"
+        android:text="上下班" />
+
+    <Button
+        android:id="@+id/button_go_back_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_go_back_work"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/textview_together_type_center"
+        android:background="@drawable/btn__publishlinetype_work"
+        android:onClick="OnButtonGoBackWork" />
+
+    <Button
+        android:id="@+id/button_go_back_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_go_back_work"
+        android:layout_below="@+id/textView_together_type_center_vertical"
+        android:background="@drawable/btn_publishlinetype_airport"
+        android:onClick="OnButtonGoBackAirportClicked" />
+
+    <Button
+        android:id="@+id/button_longdistance_together"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_go_back_airport"
+        android:layout_alignBottom="@+id/button_go_back_airport"
+        android:layout_alignLeft="@+id/button_together_now"
+        android:background="@drawable/btn_publishlinetype_commonroute" />
+
+    <Button
+        android:id="@+id/button_together_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_together_now"
+        android:layout_alignLeft="@+id/textView_together_now"
+        android:background="@drawable/btn_publishlinetype_normal" />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/button_together_now"
+	    android:layout_alignRight="@+id/button_together_now"
+	    android:layout_below="@+id/button_together_now"
+	    android:gravity="center"
+	    android:text="即刻拼车"/>
+    <TextView
+        android:id="@+id/textView_together_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_longdistance_together"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textview_together_type_center"
+        android:gravity="center" />
+
+</RelativeLayout>

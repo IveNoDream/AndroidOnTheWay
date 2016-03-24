@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AndroidOnTheWay</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">UIRoad</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="demo_title_base">基本功能--未定义</string>
+    <string name="demo_desc_base">未定义</string>
+    <string name="demo_title_listview_index">滑动listView索引</string>
+    <string name="demo_desc_listview_index">电话号码索引</string>
+    
+    <string name="popupwindow_title">下拉菜单</string>
+    <string name="popupwindow_desc">popupwindow</string>
+    
+    
+    <string name="Test_title">测试</string>
+    <string name="Test_desc">测试布局所用</string>
+    
+    
 
 </resources>

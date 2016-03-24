@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拼车软件主界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/relativelayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:background="@drawable/title_bg">
+		<TextView
+	        android:id="@+id/txt_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/button_top_left"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:text="附近"
+	        android:textSize="15sp" />
+	
+	    <Button
+	        android:id="@+id/button_top_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/buttonstyle"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="15dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp" 
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+	        android:text="筛选"
+	        android:onClick="OnButtonChooseClicked"
+	        android:textSize="15sp" />
+	
+	    <Button
+	        android:id="@+id/button_top_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="15dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp" 
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+	        android:background="@drawable/buttonstyle"
+	        android:text="地图" />
+	</RelativeLayout>
+    <!-- <LinearLayout
+        android:id="@+id/linnearlayout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:orientation="horizontal" > -->
+
+        <EditText
+            android:id="@+id/edittext_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        	android:layout_below="@id/relativelayout_title"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:background="@drawable/shape"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:hint="请在这里输入关键字" />
+
+        <!--  <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_way"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="路线" />
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/edittext_search"
+	    android:layout_above="@+id/linnearlayout_bottom">
+    <ListView
+        android:id="@+id/listview_nearby"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/linearlayout_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_search"
+        android:background="#F2F2F2"
+        android:orientation="vertical">
+        <RadioGroup 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="全部"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/radiobutton_choose_type_style"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="上下班"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/radiobutton_choose_type_style"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="长途拼"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/radiobutton_choose_type_style"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="一般拼"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/radiobutton_choose_type_style"/>
+        	<RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="机场来回"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/radiobutton_choose_type_style"/>
+        </RadioGroup>
+        <RadioGroup 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="全部"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="私家车"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="出租车"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="乘客"/>
+        </RadioGroup>
+        <RadioGroup 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="全部"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="男"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="女"/>
+            <RadioButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobutton_choose_type_style"
+                android:gravity="center"
+                android:text="拼友"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="OnButtonChooseOkClicked"
+            android:text="确定"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linnearlayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+	    android:background="@drawable/navigation_bar" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+	        android:layout_gravity="center_vertical"
+	        android:padding="10dp"
+	        android:layout_margin="10dp"
+	        android:background="@drawable/buttonstyle"
+            android:text="菜单" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+	        android:layout_gravity="center_vertical"
+	        android:padding="10dp"
+	        android:background="@drawable/buttonstyle"
+            android:text="呼人" 
+            android:onClick="OnButtonFindPersonClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+	        android:layout_gravity="center_vertical"
+	        android:padding="10dp"
+	        android:layout_margin="10dp"
+	        android:background="@drawable/buttonstyle"
+            android:text="招车" 
+            android:onClick="OnButtonFindCarClicked"/>
+    </LinearLayout>
+  
+</RelativeLayout>

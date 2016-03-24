@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--   边框颜色-->
+<!--    <item >
+        <shape >
+            <solid android:color="#8B2323"/>
+        </shape>
+    </item>
+ 主题背景颜色值 -->
+	<!-- <item android:bottom="3dp" android:right="3dp">
+	    <shape >
+	        <solid android:color="#B22222"/>
+	        <padding android:bottom="10dp" android:left="10dp" android:top="10dp" android:right="10dp"/>
+	    </shape>
+	</item> -->
+	        <item android:state_focused="true" android:drawable="@drawable/btn_bar_press"></item>
+	        <item android:state_pressed="true" android:drawable="@drawable/btn_bar_press"></item>
+	        <item android:state_enabled="true" android:drawable="@drawable/btn_bar_nor"></item>
+	    
+	    
+</selector>

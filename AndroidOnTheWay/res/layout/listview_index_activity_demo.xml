@@ -1,0 +1,169 @@
+<!-- ListView索引主界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_car_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/textView_car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/button_car_type_back"
+            android:gravity="center"
+            android:text="车型选择"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_car_type_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_back_style"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp" 
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+            android:text="返回" 
+            android:onClick="OnButtonCarTypeBackClicked"/>
+
+    </RelativeLayout>
+	<RadioGroup 
+	    android:id="@+id/radioGroup_car_type"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/relativelayout_car_type_title"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    <RadioButton 
+	        android:id="@+id/radioButton_default"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="私家车"
+	        android:button="@drawable/radiobutton_style"
+	        android:onClick="OnRadioButtonPersonalCarClicked"/>
+	    <TextView 
+	        android:layout_width="50dp"
+	        android:layout_height="wrap_content"/>
+	    <RadioButton 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:button="@drawable/radiobutton_style"
+	        android:text="出租车"
+	        android:onClick="OnRadioButtonTaxiClicked"/>
+	</RadioGroup>
+	<RelativeLayout
+	    android:id="@+id/relativelayout_car_type_personal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup_car_type"
+	    android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal" >
+
+		<ImageView
+		    android:id="@+id/imageView_car_type_personal_icon"
+		    android:layout_width="50dp"
+		    android:layout_height="40dp"
+		    android:padding="5dp"/>
+<!-- textView_car_name -->
+		<TextView
+		    android:id="@+id/tv_car_type_name_personal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignTop="@id/imageView_car_type_personal_icon"
+		    android:layout_alignBottom="@id/imageView_car_type_personal_icon"
+		    android:layout_toRightOf="@id/imageView_car_type_personal_icon"
+		    android:gravity="center_vertical" 
+		    android:paddingLeft="15dp"/>
+
+	</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/framelayout_listview_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout_car_type_personal"
+        android:layout_above="@+id/button_car_style_next"
+        android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#f0606060" 
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="#d7d7d7"
+            android:gravity="center"
+            android:orientation="vertical" >
+        </LinearLayout>       
+    </FrameLayout>
+    <Button 
+        android:id="@+id/button_car_style_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="下一步"/>
+    <RadioGroup 
+        android:id="@+id/radio_group_taix_type"
+        android:layout_below="@id/radioGroup_car_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <RadioButton 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobutton_taix_style"
+            android:text="大众"/>
+        <RadioButton 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/radiobutton_taix_style"
+            android:text="强生"/>
+        <RadioButton 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobutton_taix_style"
+            android:text="其他"/>
+    </RadioGroup>
+</RelativeLayout>
