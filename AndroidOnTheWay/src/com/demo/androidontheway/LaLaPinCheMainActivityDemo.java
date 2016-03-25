@@ -1,7 +1,9 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,7 +29,7 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 	private LinearLayout linearLayoutchoose = null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lalapinche_main_activity);
 		
@@ -51,14 +53,14 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				Intent intent = null;
 				intent = new Intent(LaLaPinCheMainActivityDemo.this, LaLaPinCheMasterDetails.class);
 				startActivity(intent);
 			}
 		});
 	}
-	private class NearbyAdapter extends BaseAdapter//´´½¨Àà£¬ÊµÏÖÊÓÍ¼ÓëÊý¾Ý°ó¶¨
+	private class NearbyAdapter extends BaseAdapter//ï¿½ï¿½ï¿½ï¿½ï¿½à£¬Êµï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ý°ï¿½
 	{
 		private LayoutInflater mInflater;
 		public NearbyAdapter(Context context)
@@ -67,25 +69,25 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 		}
 		@Override
 		public int getCount() {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return getData().size();
 		}
 
 		@Override
 		public Object getItem(int position) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return null;
 		}
 
 		@Override
 		public long getItemId(int position) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return 0;
 		}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			Log.i("Test", "getView");
 			ViewHolder holder;
 			if (convertView == null) {
@@ -106,13 +108,13 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 			else {
 				holder = (ViewHolder)convertView.getTag();
 			}
-			//ÉèÖÃTextViewÏÔÊ¾ÄÚÈÝ
-			holder.tvMaster.setText("ÁÖÏÈÉú");
-			holder.tvMasterInfo.setText("ÉÏÏÂ°à");
+			//ï¿½ï¿½ï¿½ï¿½TextViewï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+			holder.tvMaster.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+			holder.tvMasterInfo.setText("ï¿½ï¿½ï¿½Â°ï¿½");
 			holder.imageviewMasterInfo.setImageResource(R.drawable.ic_launcher);
-			holder.tvLeave.setText("³ö·¢:Ò¶³ÇÂ·768ºÅ2km");
-			holder.tvArrive.setText("µ½´ï:ºçÇÅ»ú³¡");
-			holder.tvTime.setText("Ê±¼ä:06:40-18:00");
+			holder.tvLeave.setText("ï¿½ï¿½ï¿½ï¿½:Ò¶ï¿½ï¿½Â·768ï¿½ï¿½2km");
+			holder.tvArrive.setText("ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½Å»ï¿½");
+			holder.tvTime.setText("Ê±ï¿½ï¿½:06:40-18:00");
 //			holder.imageView.setImageResource(R.drawable.ic_launcher);
 //			holder.textView.setText(getData().get(position).get("ItemText").toString());
 			return convertView;
@@ -125,7 +127,7 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 		for(int i = 0; i < 10; i++)
 		{
 			HashMap<String, Object>map = new HashMap<String, Object>();
-			map.put("ItemText", "³µÖ÷ÐÅÏ¢");
+			map.put("ItemText", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢");
 			listItem.add(map);
 		}
 		return listItem;
@@ -133,14 +135,14 @@ public class LaLaPinCheMainActivityDemo extends Activity {
 	public final class MasterOrPassengerInfo
 	{
 		public String isMasterOrPassenger;
-		public String typeForNeed;//Æ´³µÀàÐÍ£¨ÉÏÏÂ°à¡¢³Ë¿Í¡¢»ú³¡£©
-		public double distance;//È«³Ì
-		public String leavePlace;//³ö·¢µØ
-		public String arrivePlace;//µ½´ïµØµã
-		public String timeSustained;//Ê±¼ä
-		public double expend;//»¨·Ñ
-		public String attach;//¸½ÑÔ
-		public String carBrand;//³µÀàÐÍ£¨Ë½¼Ò³µ¡¢Æ·ÅÆ£©
+		public String typeForNeed;//Æ´ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Â°à¡¢ï¿½Ë¿Í¡ï¿½ï¿½ï¿½
+		public double distance;//È«ï¿½ï¿½
+		public String leavePlace;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		public String arrivePlace;//ï¿½ï¿½ï¿½ï¿½Øµï¿½
+		public String timeSustained;//Ê±ï¿½ï¿½
+		public double expend;//ï¿½ï¿½ï¿½ï¿½
+		public String attach;//ï¿½ï¿½ï¿½ï¿½
+		public String carBrand;//ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½Ë½ï¿½Ò³ï¿½ï¿½ï¿½Æ·ï¿½Æ£ï¿½
 	}
 	public final class ViewHolder
 	{

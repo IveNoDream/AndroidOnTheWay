@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.wafejlu.uiproductionfactory.MainActivity"
+            android:name="com.demo.androidontheway.MainActivity"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
             <intent-filter>
@@ -24,33 +24,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.LaLaPinCheMainActivityDemo"
+            android:name="com.demo.androidontheway.LaLaPinCheMainActivityDemo"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar"
             android:windowSoftInputMode="adjustUnspecified|stateHidden">
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.LaLaPinCheMasterDetails"
+            android:name="com.demo.androidontheway.LaLaPinCheMasterDetails"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.LaLaPinCheTogetherType"
+            android:name="com.demo.androidontheway.LaLaPinCheTogetherType"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.IndexActivity"
+            android:name="com.demo.androidontheway.IndexActivity"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.ActivityPopupWindowTest"
+            android:name="com.demo.androidontheway.ActivityPopupWindowTest"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity
-            android:name="com.wafejlu.uiproductionfactory.TestActivity"
+            android:name="com.demo.androidontheway.TestActivity"
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>

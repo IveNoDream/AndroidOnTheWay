@@ -1,4 +1,6 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,7 +14,7 @@ public class LaLaPinCheTogetherType extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lalapinche_together_type);
 	}
@@ -22,22 +24,22 @@ public class LaLaPinCheTogetherType extends Activity {
 	}
 	public void OnButtonGoBackWork(View view)
 	{
-		final String[] strWorkType = new String[]{"Æ´ÉÏ°à", "Æ´ÏÂ°à", "ÉÏÏÂ°àÍù·µ"};
+		final String[] strWorkType = new String[]{"Æ´ï¿½Ï°ï¿½", "Æ´ï¿½Â°ï¿½", "ï¿½ï¿½ï¿½Â°ï¿½ï¿½ï¿½"};
 		AlertDialog.Builder builder = new AlertDialog.Builder(LaLaPinCheTogetherType.this);
-		builder.setTitle("ÇëÑ¡Ôñ");
+		builder.setTitle("ï¿½ï¿½Ñ¡ï¿½ï¿½");
 		builder.setItems(strWorkType, new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-				Toast.makeText(LaLaPinCheTogetherType.this, "ÄãÑ¡ÔñÁË" + strWorkType[which], Toast.LENGTH_SHORT).show();
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				Toast.makeText(LaLaPinCheTogetherType.this, "ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½" + strWorkType[which], Toast.LENGTH_SHORT).show();
 			}
 		});
-		builder.setNegativeButton("È¡Ïû", new OnClickListener() {
+		builder.setNegativeButton("È¡ï¿½ï¿½", new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				
 			}
 		});
@@ -46,22 +48,22 @@ public class LaLaPinCheTogetherType extends Activity {
 	}
 	public void OnButtonGoBackAirportClicked(View view)
 	{
-		final String[] strWorkType = new String[]{"Æ´È¥»ú³¡", "Àë¿ª»ú³¡"};
+		final String[] strWorkType = new String[]{"Æ´È¥ï¿½ï¿½", "ï¿½ë¿ªï¿½ï¿½"};
 		AlertDialog.Builder builder = new AlertDialog.Builder(LaLaPinCheTogetherType.this);
-		builder.setTitle("ÇëÑ¡Ôñ");
+		builder.setTitle("ï¿½ï¿½Ñ¡ï¿½ï¿½");
 		builder.setItems(strWorkType, new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-				Toast.makeText(LaLaPinCheTogetherType.this, "ÄãÑ¡ÔñÁË" + strWorkType[which], Toast.LENGTH_SHORT).show();
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				Toast.makeText(LaLaPinCheTogetherType.this, "ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½" + strWorkType[which], Toast.LENGTH_SHORT).show();
 			}
 		});
-		builder.setNegativeButton("È¡Ïû", new OnClickListener() {
+		builder.setNegativeButton("È¡ï¿½ï¿½", new OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				
 			}
 		});

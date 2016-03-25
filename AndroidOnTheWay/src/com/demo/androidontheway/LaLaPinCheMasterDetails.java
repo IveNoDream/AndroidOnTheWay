@@ -1,4 +1,6 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +10,7 @@ public class LaLaPinCheMasterDetails extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.lalapinche_master_details_activity);
 	}

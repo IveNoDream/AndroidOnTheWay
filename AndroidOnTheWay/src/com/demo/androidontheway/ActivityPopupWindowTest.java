@@ -1,7 +1,9 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
@@ -23,10 +25,10 @@ public class ActivityPopupWindowTest extends Activity {
 	private Button mButton;
 	private PopupWindow mPopupWindow;
 	
-	private static String[] popMenu = {"ÉèÖÃ", "À¶ÑÀÉèÖÃ", "ÍË³ö"};
+	private static String[] popMenu = {"ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½Ë³ï¿½"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		super.onCreate(savedInstanceState);
 		
 		
@@ -45,7 +47,7 @@ public class ActivityPopupWindowTest extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+				// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				mPopupWindow.showAsDropDown(v);
 			}
 		});
@@ -75,31 +77,31 @@ public class ActivityPopupWindowTest extends Activity {
 	}
 	private class AdapterPopUpWindow extends BaseAdapter{
 
-		private LayoutInflater mInflater;//µÃµ½Ò»¸öLayoutInfalter¶ÔÏóÓÃÀ´µ¼Èë²¼¾Ö
+		private LayoutInflater mInflater;//ï¿½Ãµï¿½Ò»ï¿½ï¿½LayoutInfalterï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë²¼ï¿½ï¿½
 		public AdapterPopUpWindow(Context context) {
-			// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êý´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ¹ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½
 			this.mInflater = LayoutInflater.from(context);
 		}
 		public int getCount() {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return popMenu.length;
 		}
 
 		@Override
 		public Object getItem(int position) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return null;
 		}
 
 		@Override
 		public long getItemId(int position) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return 0;
 		}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			return null;
 		}
 		

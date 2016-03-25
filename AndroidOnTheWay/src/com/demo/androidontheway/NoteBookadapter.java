@@ -1,8 +1,10 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,13 +14,13 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/** ÊµÏÖFilterable½Ó¿Ú,±àÐ´¹ýÂË¹æÔò */
+/** Êµï¿½ï¿½Filterableï¿½Ó¿ï¿½,ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½ï¿½ */
 public class NoteBookadapter extends BaseAdapter {
 	private Context ctx;
 	private ViewHolder holder;
 	List<NoteBookItem> list;
-	Map<String, Integer> selector;//¼üÖµÊÇË÷Òý±íµÄ×ÖÄ¸£¬ÖµÎª¶ÔÓ¦ÔÚlistviewÖÐµÄÎ»ÖÃ
-	/** ×ÖÄ¸±í */
+	Map<String, Integer> selector;//ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ÖµÎªï¿½ï¿½Ó¦ï¿½ï¿½listviewï¿½Ðµï¿½Î»ï¿½ï¿½
+	/** ï¿½ï¿½Ä¸ï¿½ï¿½ */
 	String index[];
 	public NoteBookadapter(Context context, List<NoteBookItem> list,
 			String[] index) {
@@ -26,7 +28,7 @@ public class NoteBookadapter extends BaseAdapter {
 		this.list = list;	
 		this.index = index;
 		selector = new HashMap<String, Integer>();
-		for (int j = 0; j < index.length; j++) {// Ñ­»·×ÖÄ¸±í£¬ÕÒ³ölistÖÐ¶ÔÓ¦×ÖÄ¸µÄÎ»ÖÃ
+		for (int j = 0; j < index.length; j++) {// Ñ­ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½?ï¿½Ò³ï¿½listï¿½Ð¶ï¿½Ó¦ï¿½ï¿½Ä¸ï¿½ï¿½Î»ï¿½ï¿½
 			for (int i = 0; i < list.size(); i++) {
 				if (list.get(i).index.equals(index[j].toLowerCase()))
 					selector.put(index[j], i);
@@ -72,7 +74,7 @@ public class NoteBookadapter extends BaseAdapter {
 			} else {
 				holder = (ViewHolder) convertView.getTag();
 			}
-			// °ó¶¨Êý¾Ý
+			// ï¿½ï¿½ï¿½ï¿½ï¿½
 			NoteBookItem item = list.get(position);
 			holder.tv1.setText(item.name);
 			holder.iv.setImageResource(item.imageRscID);
@@ -82,17 +84,17 @@ public class NoteBookadapter extends BaseAdapter {
 //				holder.tv2.setText(item.number);
 //			holder.tv3.setText(item.call);
 
-			// ÏÔÊ¾index
+			// ï¿½ï¿½Ê¾index
 			String currentStr = item.index;
-			// ÉÏÒ»ÏîµÄindex
+			// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½index
 			String previewStr = (position - 1) >= 0 ? list.get(position - 1).index
 					: " ";
 			/**
-			 * ÅÐ¶ÏÊÇ·ñÉÏÒ»´ÎµÄ´æÔÚ
+			 * ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ò»ï¿½ÎµÄ´ï¿½ï¿½ï¿½
 			 */
 			if (!previewStr.equals(currentStr)) {
 				holder.index.setVisibility(View.VISIBLE);
-				holder.index.setText(currentStr);//ÖÐ¼äÌáÊ¾µÄÎÄ±¾ÏÔÊ¾µ±Ç°»¬¶¯µÄ×ÖÄ¸
+				holder.index.setText(currentStr);//ï¿½Ð¼ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸
 			} else {
 				holder.index.setVisibility(View.GONE);
 			}

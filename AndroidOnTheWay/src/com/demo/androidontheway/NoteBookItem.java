@@ -1,23 +1,23 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
 
 import java.io.Serializable;
 
-/** ÁÐ±íÐÅÏ¢ */
+/** ï¿½Ð±ï¿½ï¿½ï¿½Ï¢ */
 @SuppressWarnings("serial")
 public class NoteBookItem implements Serializable {
 	
-	/**Ë÷Òý×ÖÄ¸*/
+	/**ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸*/
 	public String index;
 
-	/** ¸üÐÂµÄÖµ */
+	/** ï¿½ï¿½ï¿½Âµï¿½Öµ */
 	public String update=null;
-	/** Ãû×Ö */
+	/** ï¿½ï¿½ï¿½ï¿½ */
 	public String name;
-	/** ³ÆºÅ */
+	/** ï¿½Æºï¿½ */
 //	public String call;
-	/** µç»°ºÅÂë */
+	/** ï¿½ç»°ï¿½ï¿½ï¿½ï¿½ */
 //	public String number="null";
-	/** ÊÖ»úºÅÂë */
+	/** ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ */
 //	public String mobile="null";
 	/** mail */
 //	public String mail;

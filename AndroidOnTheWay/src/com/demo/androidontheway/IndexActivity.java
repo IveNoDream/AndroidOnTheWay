@@ -1,7 +1,9 @@
-package com.wafejlu.uiproductionfactory;
+package com.demo.androidontheway;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.wafejlu.uiproductionfactory.R;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -22,21 +24,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * @package£ºcom.wafejlu.uiproductionfactory
- * @author£ºfengw
- * @email£º
- * @data£º
- * @description£º´øÊµÌåµÄÊý¾ÝÔ´
+ * @packageï¿½ï¿½com.wafejlu.uiproductionfactory
+ * @authorï¿½ï¿½fengw
+ * @emailï¿½ï¿½
+ * @dataï¿½ï¿½
+ * @descriptionï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
  */
 public class IndexActivity extends Activity {
 
 	LinearLayout layoutIndex;
-	/** ×ÖÄ¸Ë÷Òý±í */
-	private String[] strCarName = {"°ÂµÏ", "±¦Âí", "±£Ê±½Ý", "±¼³Û", "±êÖÂ", "±¾Ìï", "±ð¿Ë", "±öÀû", "BYD", 
-			"³¤³Ç", "´óÖÚ", "·¨À­Àû", "·ÆÑÇÌØ",  "·áÌï", "¸£ÌØ","¹ãÆû", "º£Âí", "º·Âí", "¼ªÀû", "½­»´", "½­Áå", "½Ý±ª", "¿­µÏÀ­¿Ë",
-			"¿ËÀ³Ë¹ÀÕ", "À×¿ËÈøË¹", "À×Åµ", "Á¦·«", "Á«»¨", "ÁÖ¿Ï", "ÁåÄ¾", "Â·»¢", "Âí×Ô´ï", "Ãû¾ô", "mini", "ÄáÉ£"
-			, "Å·±¦", "Ú©¸è", "ÆæÈð", "ÆðÑÇ", "ÈÙÍþ", "Ë¹¿Â´ï", "smart", "ÎÖ¶ûÎÖ", "ÏÖ´ú", "Ñ©ÌúÁú", 
-			"Ò»Æû", "ÖÐ»ª", "ÆäËûÆ·ÅÆ"};
+	/** ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ */
+	private String[] strCarName = {"ï¿½Âµï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½Ê±ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "BYD", 
+			"ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",  "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½Ý±ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+			"ï¿½ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½", "ï¿½×¿ï¿½ï¿½ï¿½Ë¹", "ï¿½ï¿½Åµ", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½Ö¿ï¿½", "ï¿½ï¿½Ä¾", "Â·ï¿½ï¿½", "ï¿½ï¿½ï¿½Ô´ï¿½", "ï¿½ï¿½ï¿½", "mini", "ï¿½ï¿½É£"
+			, "Å·ï¿½ï¿½", "Ú©ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "Ë¹ï¿½Â´ï¿½", "smart", "ï¿½Ö¶ï¿½ï¿½ï¿½", "ï¿½Ö´ï¿½", "Ñ©ï¿½ï¿½ï¿½ï¿½", 
+			"Ò»ï¿½ï¿½", "ï¿½Ð»ï¿½", "ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½"};
 	private String[] str = { "A", "B", "C", "D",  "F", "G", "H", 
 			"J", "K", "L", "M", "N", "O",  "Q", "R", "S",  "W", "X", "Y",
 			"Z" };//
@@ -55,17 +57,17 @@ public class IndexActivity extends Activity {
 			R.drawable.ic_kia, R.drawable.ic_roewe, R.drawable.ic_skoda,
 			R.drawable.ic_smart, R.drawable.ic_volvo, R.drawable.ic_hyundai, 
 			R.drawable.ic_citroen, R.drawable.ic_faw, R.drawable.ic_zhonghua, R.drawable.ic_car};
-	int height;// ×ÖÌå¸ß¶È
+	int height;// ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
 	List<NoteBookItem> listData;
 	private ListView listView;
 	NoteBookadapter adapter;
-	private TextView tv_show;// ÖÐ¼äÏÔÊ¾±êÌâµÄÎÄ±¾
-	private RadioButton radioButtondefault = null;//ÉèÖÃÄ¬ÈÏÑ¡Ôñradiobutton
+	private TextView tv_show;// ï¿½Ð¼ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½
+	private RadioButton radioButtondefault = null;//ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Ñ¡ï¿½ï¿½radiobutton
 	private ImageView imageChoosed = null;
 	private TextView textChoosed = null;
-	private RadioGroup radioGroupCarTypeTaxi = null;//³ö×â³µÑ¡Ïî
-	private RelativeLayout relativeLayoutCarTypeIChoose = null;//Ë½¼Ò³µÒÑÑ¡Ôñ
-	private FrameLayout frameLayoutListViewIndex = null;//Ë½¼Ò³µÀàÐÍListView
+	private RadioGroup radioGroupCarTypeTaxi = null;//ï¿½ï¿½ï¿½â³µÑ¡ï¿½ï¿½
+	private RelativeLayout relativeLayoutCarTypeIChoose = null;//Ë½ï¿½Ò³ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+	private FrameLayout frameLayoutListViewIndex = null;//Ë½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ListView
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -84,23 +86,23 @@ public class IndexActivity extends Activity {
 
 		tv_show = (TextView) findViewById(R.id.tv);
 		tv_show.setVisibility(View.INVISIBLE);
-		//ÊµÀý»¯Ñ¡Ôñ³µµÄÀàÐÍ
+		//Êµï¿½ï¿½Ñ¡ï¿½ñ³µµï¿½ï¿½ï¿½ï¿½ï¿½
 		imageChoosed = (ImageView)findViewById(R.id.imageView_car_type_personal_icon);
 		textChoosed = (TextView)findViewById(R.id.tv_car_type_name_personal);
-		//ListViewµã»÷ÊÂ¼þ
+		//ListViewï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 		listView.setOnItemClickListener(carTypeClickedListener);
-		//ÊµÀý»¯ÒªÒþ²ØÄÄÒ»¸ö½çÃæ
+		//Êµï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		radioGroupCarTypeTaxi = (RadioGroup)findViewById(R.id.radio_group_taix_type);
 		relativeLayoutCarTypeIChoose = (RelativeLayout)findViewById(R.id.relativelayout_car_type_personal);
 		frameLayoutListViewIndex = (FrameLayout)findViewById(R.id.framelayout_listview_index);
-		radioGroupCarTypeTaxi.setVisibility(View.INVISIBLE);//³õÊ¼»¯Òþ²Ø³ö×â³µ½çÃæ
+		radioGroupCarTypeTaxi.setVisibility(View.INVISIBLE);//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ø³ï¿½ï¿½â³µï¿½ï¿½ï¿½ï¿½
 	}
 	private OnItemClickListener carTypeClickedListener = new OnItemClickListener() {
 
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+			// TODO ï¿½Ô¶ï¿½ï¿½ï¿½ÉµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			imageChoosed.setImageResource(imageIconID[position]);
 			textChoosed.setText(strCarName[position]);
 		}
@@ -112,82 +114,82 @@ public class IndexActivity extends Activity {
 			NoteBookItem item = new NoteBookItem();
 			item.name = strCarName[i];
 			item.imageRscID = imageIconID[i];
-			item.index = String.valueOf(Pinyin4j.getHanyuPinyin(item.name).charAt(0));
+			item.index = "a";
 			listData.add(item);
 		}
 /*		NoteBookItem n1 = new NoteBookItem();
-		n1.call = "¾­Àí";
+		n1.call = "ï¿½ï¿½ï¿½ï¿½";
 		n1.name = "allen";
 		n1.mobile = "18217594856";
 		n1.index = String.valueOf(Pinyin4j.getHanyuPinyin(n1.name).charAt(0));		
 		listData.add(n1);
 		
 		NoteBookItem n2 = new NoteBookItem();
-		n2.call = "¹¤³ÌÊ¦";
+		n2.call = "ï¿½ï¿½ï¿½ï¿½Ê¦";
 		n2.name = "android";
 		n2.mobile = "13658974521";
 		n2.index = String.valueOf(Pinyin4j.getHanyuPinyin(n2.name).charAt(0));
 		listData.add(n2);
 		
 		NoteBookItem n3 = new NoteBookItem();
-		n3.call = "¾­Àí";
-		n3.name = "ÖÜ¿¡";
+		n3.call = "ï¿½ï¿½ï¿½ï¿½";
+		n3.name = "ï¿½Ü¿ï¿½";
 		n3.mobile = "13658974521";
 		n3.index = String.valueOf(Pinyin4j.getHanyuPinyin(n3.name).charAt(0));
 		listData.add(n3);
 		
 		NoteBookItem n4 = new NoteBookItem();
-		n4.call = "½ÌÊ¦";
-		n4.name = "ÍõÇ¿";
+		n4.call = "ï¿½ï¿½Ê¦";
+		n4.name = "ï¿½ï¿½Ç¿";
 		n4.number = "021-25635784";
 		n4.index = String.valueOf(Pinyin4j.getHanyuPinyin(n4.name).charAt(0));
 		listData.add(n4);
 		
 		NoteBookItem n5 = new NoteBookItem();
-		n5.call = "¿Í·þ";
-		n5.name = "ÁõÃô";
+		n5.call = "ï¿½Í·ï¿½";
+		n5.name = "ï¿½ï¿½ï¿½ï¿½";
 		n5.number = "010-25635784";
 		n5.index = String.valueOf(Pinyin4j.getHanyuPinyin(n5.name).charAt(0));
 		listData.add(n5);
 		
 		NoteBookItem n6 = new NoteBookItem();
-		n6.call = "¿Í·þ";
+		n6.call = "ï¿½Í·ï¿½";
 		n6.name = "bruth";
 		n6.number = "010-25635784";
 		n6.index = String.valueOf(Pinyin4j.getHanyuPinyin(n6.name).charAt(0));
 		listData.add(n6);
 		
 		NoteBookItem n7 = new NoteBookItem();
-		n7.call = "¾­Àí";
-		n7.name = "³ÂÎÄÃ÷";
+		n7.call = "ï¿½ï¿½ï¿½ï¿½";
+		n7.name = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 		n7.number = "010-25635784";
 		n7.index = String.valueOf(Pinyin4j.getHanyuPinyin(n7.name).charAt(0));
 		listData.add(n7);
 		
 		NoteBookItem n8 = new NoteBookItem();
-		n8.call = "¿Í·þ";
+		n8.call = "ï¿½Í·ï¿½";
 		n8.name = "mary";
 		n8.number = "010-25635784";
 		n8.index = String.valueOf(Pinyin4j.getHanyuPinyin(n8.name).charAt(0));
 		listData.add(n8);
 		
 		NoteBookItem n9 = new NoteBookItem();
-		n9.call = "¿Í·þ";
-		n9.name = "ÀîÓÂ";
+		n9.call = "ï¿½Í·ï¿½";
+		n9.name = "ï¿½ï¿½ï¿½ï¿½";
 		n9.number = "010-25635784";
 		n9.index = String.valueOf(Pinyin4j.getHanyuPinyin(n9.name).charAt(0));
 		listData.add(n9);
 		
 		NoteBookItem n10 = new NoteBookItem();
-		n10.call = "¿Í·þ";
-		n10.name = "ÄÈÄÈ";
+		n10.call = "ï¿½Í·ï¿½";
+		n10.name = "ï¿½ï¿½ï¿½ï¿½";
 		n10.number = "010-25635784";
 		n10.index = String.valueOf(Pinyin4j.getHanyuPinyin(n10.name).charAt(0));
 		listData.add(n10);
 		
 		NoteBookItem n11 = new NoteBookItem();
-		n11.call = "¿Í·þ";
-		n11.name = "óãóã";
+		n11.call = "ï¿½Í·ï¿½";
+		n11.name = "ï¿½ï¿½ï¿½ï¿½";
 		n11.number = "010-25635784";
 		n11.index = String.valueOf(Pinyin4j.getHanyuPinyin(n11.name).charAt(0));
 		listData.add(n11);*/
@@ -195,14 +197,14 @@ public class IndexActivity extends Activity {
 
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
-		// ÔÚoncreateÀïÃæÖ´ÐÐÏÂÃæµÄ´úÂëÃ»·´Ó¦£¬ÒòÎªoncreateÀïÃæµÃµ½µÄgetHeight=0
+		// ï¿½ï¿½oncreateï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Îªoncreateï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½getHeight=0
 		System.out
 				.println("layoutIndex.getHeight()=" + layoutIndex.getHeight());
 		height = layoutIndex.getHeight() / str.length;
 		getIndexView();
 	}
 	/*
-	 * Ë½¼Ò³µ°´Å¥µã»÷ÏìÓ¦
+	 * Ë½ï¿½Ò³ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦
 	 */
 	public void OnRadioButtonPersonalCarClicked(View view)
 	{
@@ -211,7 +213,7 @@ public class IndexActivity extends Activity {
 		frameLayoutListViewIndex.setVisibility(View.VISIBLE);
 	}
 	/*
-	 * ³ö×â³µ°´Å¥µã»÷ÏìÓ¦
+	 * ï¿½ï¿½ï¿½â³µï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦
 	 */
 	public void OnRadioButtonTaxiClicked(View view)
 	{
@@ -220,13 +222,13 @@ public class IndexActivity extends Activity {
 		radioGroupCarTypeTaxi.setVisibility(View.VISIBLE);
 	}
 	/*
-	 * ·µ»Ø°´Å¥µã»÷ÊÂ¼þ
+	 * ï¿½ï¿½ï¿½Ø°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 	 */
 	public void OnButtonCarTypeBackClicked(View view)
 	{
 		this.finish();
 	}
-	/** »æÖÆË÷ÒýÁÐ±í */
+	/** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ */
 	public void getIndexView() {
 		LinearLayout.LayoutParams params = new LayoutParams(
 				LayoutParams.WRAP_CONTENT, height);
@@ -247,15 +249,15 @@ public class IndexActivity extends Activity {
 				{
 					float y = event.getY();
 					int index = (int) (y / height);
-					if (index > -1 && index < str.length) {// ·ÀÖ¹Ô½½ç
+					if (index > -1 && index < str.length) {// ï¿½ï¿½Ö¹Ô½ï¿½ï¿½
 						String key = str[index];
 						if (adapter.getSelector().containsKey(key)) {
 							int pos = adapter.getSelector().get(key);
-							if (listView.getHeaderViewsCount() > 0) {// ·ÀÖ¹ListViewÓÐ±êÌâÀ¸£¬±¾ÀýÖÐÃ»ÓÐ¡£
+							if (listView.getHeaderViewsCount() > 0) {// ï¿½ï¿½Ö¹ListViewï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¡ï¿½
 								listView.setSelectionFromTop(
 										pos + listView.getHeaderViewsCount(), 0);
 							} else {
-								listView.setSelectionFromTop(pos, 0);// »¬¶¯µ½µÚÒ»Ïî
+								listView.setSelectionFromTop(pos, 0);// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 							}
 							tv_show.setVisibility(View.VISIBLE);
 							tv_show.setText(str[index]);
