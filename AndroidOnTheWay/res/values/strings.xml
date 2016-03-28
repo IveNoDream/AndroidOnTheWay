@@ -12,6 +12,10 @@
     <string name="popupwindow_title">下拉菜单</string>
     <string name="popupwindow_desc">popupwindow</string>
     
+    <string name="webview_title">WebView</string>
+    <string name="webview_desc">WebView应用</string>
+    <string name="httpclient_title">HttpClient</string>
+    <string name="httpclient_desc">HttpClient应用</string>
     
     <string name="Test_title">测试</string>
     <string name="Test_desc">测试布局所用</string>

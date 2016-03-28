@@ -1,5 +1,7 @@
 package com.demo.androidontheway;
 
+import com.demo.androidontheway.http.HttpClient;
+import com.demo.androidontheway.http.WebViewTest;
 import com.wafejlu.uiproductionfactory.R;
 
 import android.os.Bundle;
@@ -84,7 +86,9 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.demo_title_base,
 				R.string.demo_title_base, LaLaPinCheMainActivityDemo.class),
 		new DemoInfo(R.string.demo_title_listview_index, R.string.demo_desc_listview_index, IndexActivity.class),
-		new DemoInfo(R.string.popupwindow_title, R.string.popupwindow_desc, ActivityPopupWindowTest.class)
+		new DemoInfo(R.string.popupwindow_title, R.string.popupwindow_desc, ActivityPopupWindowTest.class),
+		new DemoInfo(R.string.webview_title, R.string.webview_desc, WebViewTest.class),
+		new DemoInfo(R.string.httpclient_title, R.string.httpclient_desc, HttpClient.class)
 	
 	};
 	private static class DemoInfo{
