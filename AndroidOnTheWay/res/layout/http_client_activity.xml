@@ -5,10 +5,15 @@
     android:orientation="vertical" >
     
     <Button 
+        android:id="@+id/btn_http_url_connection_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/http_url_connection"/>
+    <Button 
         android:id="@+id/btn_http_client_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/httpclient_title"/>
+        android:text="@string/http_client"/>
     
     <ScrollView 
         android:id="@+id/sv_http_client"
