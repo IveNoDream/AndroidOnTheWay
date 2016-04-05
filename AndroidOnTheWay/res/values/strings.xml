@@ -19,6 +19,9 @@
     <string name="httpclient_title">Http请求</string>
     <string name="httpclient_desc">Http应用</string>
     
+    <string name="camera_captrue_title">照相机取照</string>
+    <string name="camera_captrue_desc">调用照相机，返回照相机照片</string>
+    
     <string name="Test_title">测试</string>
     <string name="Test_desc">测试布局所用</string>
     
