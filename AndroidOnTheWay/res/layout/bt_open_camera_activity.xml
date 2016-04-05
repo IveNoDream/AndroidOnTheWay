@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mibound.bluetoothtest.BTOpenCameraActivity" >
+
+    <Button 
+        android:id="@+id/btn_select_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chose Device"/>
+    <TextView 
+        android:id="@+id/tv_bt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/btn_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Camera"/>
+    <Button 
+        android:id="@+id/btn_dis_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"/>
+
+    <ToggleButton
+        android:id="@+id/tb_tab_client_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Client"
+        android:textOff="Server" />
+
+</LinearLayout>

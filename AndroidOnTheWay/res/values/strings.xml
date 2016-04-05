@@ -22,6 +22,9 @@
     <string name="camera_captrue_title">照相机取照</string>
     <string name="camera_captrue_desc">调用照相机，返回照相机照片</string>
     
+    <string name="bt_test_title">蓝牙开发</string>
+    <string name="bt_test_desc">蓝牙聊天，打开摄像头，一个做服务端一个做客户端</string>
+    
     <string name="Test_title">测试</string>
     <string name="Test_desc">测试布局所用</string>
     

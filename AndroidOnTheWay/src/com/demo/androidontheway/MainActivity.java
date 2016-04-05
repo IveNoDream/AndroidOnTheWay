@@ -1,5 +1,6 @@
 package com.demo.androidontheway;
 
+import com.demo.androidontheway.bt.BTOpenCameraActivity;
 import com.demo.androidontheway.camera.CameraCapture;
 import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
@@ -90,7 +91,8 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.popupwindow_title, R.string.popupwindow_desc, ActivityPopupWindowTest.class),
 		new DemoInfo(R.string.webview_title, R.string.webview_desc, WebViewTest.class),
 		new DemoInfo(R.string.httpclient_title, R.string.httpclient_desc, HttpClient.class),
-		new DemoInfo(R.string.camera_captrue_title, R.string.camera_captrue_desc, CameraCapture.class)
+		new DemoInfo(R.string.camera_captrue_title, R.string.camera_captrue_desc, CameraCapture.class),
+		new DemoInfo(R.string.bt_test_title, R.string.bt_test_desc, BTOpenCameraActivity.class)
 	
 	};
 	private static class DemoInfo{
