@@ -12,7 +12,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import com.wafejlu.uiproductionfactory.R;
+import com.demo.androidontheway.R;
 
 import android.app.Activity;
 import android.os.Bundle;

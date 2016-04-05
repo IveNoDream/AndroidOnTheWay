@@ -3,8 +3,6 @@ package com.demo.androidontheway;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.wafejlu.uiproductionfactory.R;
-
 import android.app.Activity;
 import android.app.ActionBar.LayoutParams;
 import android.content.Context;

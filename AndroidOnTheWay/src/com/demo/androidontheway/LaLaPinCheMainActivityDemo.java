@@ -3,8 +3,6 @@ package com.demo.androidontheway;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.wafejlu.uiproductionfactory.R;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;

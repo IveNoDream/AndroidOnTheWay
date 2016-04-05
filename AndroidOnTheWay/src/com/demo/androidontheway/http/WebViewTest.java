@@ -1,6 +1,6 @@
 package com.demo.androidontheway.http;
 
-import com.wafejlu.uiproductionfactory.R;
+import com.demo.androidontheway.R;
 
 import android.app.Activity;
 import android.webkit.WebView;

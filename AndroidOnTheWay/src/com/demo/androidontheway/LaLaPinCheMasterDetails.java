@@ -1,7 +1,5 @@
 package com.demo.androidontheway;
 
-import com.wafejlu.uiproductionfactory.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

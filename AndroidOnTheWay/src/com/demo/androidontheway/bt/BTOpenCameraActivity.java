@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.wafejlu.uiproductionfactory.R;
+import com.demo.androidontheway.R;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothServerSocket;

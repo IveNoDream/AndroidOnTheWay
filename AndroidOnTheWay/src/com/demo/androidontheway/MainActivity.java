@@ -4,7 +4,6 @@ import com.demo.androidontheway.bt.BTOpenCameraActivity;
 import com.demo.androidontheway.camera.CameraCapture;
 import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
-import com.wafejlu.uiproductionfactory.R;
 
 import android.os.Bundle;
 import android.app.Activity;

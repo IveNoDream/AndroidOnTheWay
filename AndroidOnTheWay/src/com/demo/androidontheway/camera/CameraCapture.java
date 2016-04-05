@@ -1,6 +1,6 @@
 package com.demo.androidontheway.camera;
 
-import com.wafejlu.uiproductionfactory.R;
+import com.demo.androidontheway.R;
 
 import android.R.anim;
 import android.app.Activity;
