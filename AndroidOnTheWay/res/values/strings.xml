@@ -31,6 +31,9 @@
     <string name="Test_title">测试</string>
     <string name="Test_desc">测试布局所用</string>
     
+    <string name="custom_view_property_test_title">自定义控件</string>
+    <string name="custom_view_property_test_desc">自定义控件及属性</string>
+    
     
 
 </resources>
