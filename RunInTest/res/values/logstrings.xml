@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="log_begin_test">整机测试开始</string>
+    <string name="log_reboot_test_begin">重启测试开始</string>
+    <string name="log_screen_keep_on">开启永不熄屏</string>
+    <string name="log_screen_keep_off">关闭永不熄屏</string>
+    <string name="log_charge_on">充电</string>
+    <string name="log_charge_off">不充电</string>
+    <string name="log_reboot_test_alone">单项重启测试</string>
+    <string name="log_updown_test_alone">单项升降测试</string>
+    <string name="log_camera_test_alone">单项相机测试</string>
+    <string name="log_emmc_test_alone">单项EMMC测试</string>
+    <string name="log_ddr_test_alone">单项DDR测试</string>
+    <string name="log_set_test_number">--------------测试次数--------------</string>
+
+    <string name="log_reboot_test">重启测试次数=</string>
+    <string name="log_up_down_test">升降测试次数=</string>
+    <string name="log_camera_test">Camera测试次数=</string>
+    <string name="log_emmc_test">EMMC测试次数=</string>
+    <string name="log_calls_test">CALL测试次数=</string>
+    <string name="log_ddr_test">DDR测试次数=</string>
+
+    <string name="log_up_down_background">背光测试</string>
+    <string name="log_up_down_LCD">LCD测试</string>
+    <string name="log_up_down_Speaker">Speaker测试</string>
+    <string name="log_up_down_Sensor">传感器测试</string>
+    <string name="log_up_down_Video">视频测试</string>
+    <string name="log_up_down_Reveiver">Receiver测试</string>
+
+    <string name="log_set_test_time">--------------设置测试次数--------------</string>
+    <string name="log_set_test_time_ok">--------------设置测试次数完成--------------</string>
+    <string name="log_test_report">--------------测试报告--------------</string>
+    <string name="log_test_success">------>测试成功</string>
+    <string name="log_test_failed">------>测试失败</string>
+    <string name="log_test_failed_or_noHeadset">------>测试失败或耳机没插入</string>
+    <string name="log_default">--------------恢复默认次数--------------</string>
+    <string name="log_camera_test_begin">--------------开始相机测试--------------</string>
+    <string name="log_camera_test_end">--------------相机测试完成--------------</string>
+    <string name="log_emmc_test_begin">--------------开始EMMC测试--------------</string>
+    <string name="log_emmc_test_end">--------------EMMC测试完成--------------</string>
+
+    
+    <string name="log_camera_test_result_back_success">"后摄拍照成功,保存名称:"</string>
+    <string name="log_camera_test_result_front_success">"前摄拍照成功,保存名称:"</string>
+    <string name="log_camera_test_result_back_failed">"后摄拍照失败:"</string>
+    <string name="log_camera_test_result_front_failed">"前摄拍照失败:"</string>
+        
+    <string name="log_tone_test_result_start">"--------------开始声音测试--------------"</string>
+    <string name="log_tone_test_result_end">"--------------声音测试结束--------------"</string>
+    <string name="log_tone_test_result_success">"声音测试成功"</string>
+    <string name="log_tone_test_result_failed">"声音测试失败"</string>
+        
+    <string name="log_gsm_test_result_start">"--------------开始GSM测试--------------"</string>
+    <string name="log_gsm_test_result_end">"--------------GSM测试结束--------------"</string>
+    <string name="log_gsm_test_result_success">"GSM测试成功"</string>
+    <string name="log_gsm_test_result_failed">"GSM测试失败"</string>
+    <string name="log_gsm_test_result_enable_success">"数据打开成功"</string>
+    <string name="log_gsm_test_result_enable_failed">"数据打开失败"</string>
+        
+    <string name="log_bt_test_result_start">"--------------开始BT测试--------------"</string>
+    <string name="log_bt_test_result_end">"--------------BT测试结束--------------"</string>
+    <string name="log_bt_test_result_send_success">"发送文件"</string>
+    <string name="log_bt_test_result_no_device">"未连接设备"</string>
+    <string name="log_bt_test_result_enablebt">"打开蓝牙"</string>
+    <string name="log_bt_test_result_enablebtdiscoverable">"蓝牙可被检测"</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

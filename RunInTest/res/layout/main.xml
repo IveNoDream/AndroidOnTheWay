@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hymost.runintest.RunInTest" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/testBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/testAll"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/resultBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/testResult"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/countBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/testCount"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white" />
+    
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:columnWidth="101.0dp"
+        android:gravity="center"
+        android:horizontalSpacing="1.0dp"
+        android:numColumns="auto_fit"
+        android:padding="1.0dp"
+        android:verticalSpacing="1.0dp" />
+
+</LinearLayout>
