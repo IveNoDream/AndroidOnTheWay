@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.androidontheway.camera.VideoRecordingActivity" 
+    tools:context="com.mibound.dina.VideoRecordingActivity" 
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,13 +14,23 @@
             android:id="@+id/btn_VideoStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/video_recording_start" />
+            android:text="开始录像" />
 
         <Button
             android:id="@+id/btn_VideoStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/video_recording_stop" />
+            android:text="结束录像" />
+        
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="21sp" />
+
     </LinearLayout>
 
     <SurfaceView
