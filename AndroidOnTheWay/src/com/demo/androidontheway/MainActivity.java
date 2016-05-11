@@ -3,6 +3,7 @@ package com.demo.androidontheway;
 import com.demo.androidontheway.broadcast.BroadcastTestActivity;
 import com.demo.androidontheway.bt.BTOpenCameraActivity;
 import com.demo.androidontheway.camera.CameraCapture;
+import com.demo.androidontheway.camera.VideoRecordingActivity;
 import com.demo.androidontheway.customviewproperty.MytestViewActivity;
 import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
@@ -95,7 +96,8 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.camera_captrue_title, R.string.camera_captrue_desc, CameraCapture.class),
 		new DemoInfo(R.string.bt_test_title, R.string.bt_test_desc, BTOpenCameraActivity.class),
 		new DemoInfo(R.string.broadcast_test_title, R.string.broadcast_test_desc, BroadcastTestActivity.class),
-		new DemoInfo(R.string.custom_view_property_test_title, R.string.custom_view_property_test_desc, MytestViewActivity.class)
+		new DemoInfo(R.string.custom_view_property_test_title, R.string.custom_view_property_test_desc, MytestViewActivity.class),
+		new DemoInfo(R.string.video_recording_test_title, R.string.video_recording_test_desc, VideoRecordingActivity.class)
 	
 	};
 	private static class DemoInfo{

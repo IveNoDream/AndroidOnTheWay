@@ -1,2 +1,5 @@
 /AndroidOnTheWay/bin
 /AndroidOnTheWay/gen
+/RunInTest/bin
+/RunInTest/gen
+/RunInTest/project.properties

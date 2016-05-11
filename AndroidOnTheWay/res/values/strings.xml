@@ -34,6 +34,9 @@
     <string name="custom_view_property_test_title">自定义控件</string>
     <string name="custom_view_property_test_desc">自定义控件及属性</string>
     
-    
+    <string name="video_recording_test_title">Video Recording</string>
+    <string name="video_recording_test_desc">Rececle Video Recording</string>
+    <string name="video_recording_start">Start</string>
+    <string name="video_recording_stop">Stop</string>
 
 </resources>
