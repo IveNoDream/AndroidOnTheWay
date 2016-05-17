@@ -38,5 +38,10 @@
     <string name="video_recording_test_desc">Rececle Video Recording</string>
     <string name="video_recording_start">Start</string>
     <string name="video_recording_stop">Stop</string>
+    
+    
+    <string name="interface_test_title">InterfaceTest</string>
+    <string name="interface_test_desc">Interface and Callback</string>
+    <string name="interface_test_jieqian">Borrow</string>
 
 </resources>

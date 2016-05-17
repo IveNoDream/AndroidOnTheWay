@@ -120,6 +120,12 @@
             android:label="@string/app_name" 
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
+        
+        <activity
+            android:name="com.demo.androidontheway.testinterface.TestInterfaceActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>
