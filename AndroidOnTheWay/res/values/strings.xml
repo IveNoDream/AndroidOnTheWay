@@ -45,7 +45,7 @@
     <string name="interface_test_jieqian">Borrow</string>
     
     
-    <string name="jni_test_title">InterfaceTest</string>
-    <string name="jni_test_desc">Interface and Callback</string>
+    <string name="jni_test_title">JNITest</string>
+    <string name="jni_test_desc">JNI Test,compiled .so file</string>
 
 </resources>
