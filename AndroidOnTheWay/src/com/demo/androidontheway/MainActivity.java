@@ -8,6 +8,7 @@ import com.demo.androidontheway.customviewproperty.MytestViewActivity;
 import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
 import com.demo.androidontheway.testinterface.TestInterfaceActivity;
+import com.demo.androidontheway.testjni.TestJNIActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -99,7 +100,8 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.broadcast_test_title, R.string.broadcast_test_desc, BroadcastTestActivity.class),
 		new DemoInfo(R.string.custom_view_property_test_title, R.string.custom_view_property_test_desc, MytestViewActivity.class),
 		new DemoInfo(R.string.video_recording_test_title, R.string.video_recording_test_desc, VideoRecordingActivity.class),
-		new DemoInfo(R.string.interface_test_title, R.string.interface_test_desc, TestInterfaceActivity.class)
+		new DemoInfo(R.string.interface_test_title, R.string.interface_test_desc, TestInterfaceActivity.class),
+		new DemoInfo(R.string.jni_test_title, R.string.jni_test_desc, TestJNIActivity.class)
 		
 	};
 	private static class DemoInfo{

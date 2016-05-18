@@ -43,5 +43,9 @@
     <string name="interface_test_title">InterfaceTest</string>
     <string name="interface_test_desc">Interface and Callback</string>
     <string name="interface_test_jieqian">Borrow</string>
+    
+    
+    <string name="jni_test_title">InterfaceTest</string>
+    <string name="jni_test_desc">Interface and Callback</string>
 
 </resources>
