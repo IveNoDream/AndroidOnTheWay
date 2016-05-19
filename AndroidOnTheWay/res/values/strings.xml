@@ -57,5 +57,9 @@
     <string name="custom_switch_style_custom_text">Custom Style</string>
     <string name="custom_switch_style_flyme5_text">Flyme5 Style</string>
     <string name="custom_switch_style_miui7_text">MIUI7 Style</string>
+    <string name="custom_switch_style_tint_color">Custom by tint color</string>
+    <string name="custom_switch_style_md_ios">Material Design &#038; iOS Style</string>
+    <string name="custom_switch_style_disable">Disable state</string>
+    <string name="custom_switch_style_click">OnClickToast</string>
 
 </resources>
