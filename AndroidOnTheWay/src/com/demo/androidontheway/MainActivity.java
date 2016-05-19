@@ -4,6 +4,7 @@ import com.demo.androidontheway.broadcast.BroadcastTestActivity;
 import com.demo.androidontheway.bt.BTOpenCameraActivity;
 import com.demo.androidontheway.camera.CameraCapture;
 import com.demo.androidontheway.camera.VideoRecordingActivity;
+import com.demo.androidontheway.customswitch.CustomSwitchActivity;
 import com.demo.androidontheway.customviewproperty.MytestViewActivity;
 import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
@@ -101,7 +102,8 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.custom_view_property_test_title, R.string.custom_view_property_test_desc, MytestViewActivity.class),
 		new DemoInfo(R.string.video_recording_test_title, R.string.video_recording_test_desc, VideoRecordingActivity.class),
 		new DemoInfo(R.string.interface_test_title, R.string.interface_test_desc, TestInterfaceActivity.class),
-		new DemoInfo(R.string.jni_test_title, R.string.jni_test_desc, TestJNIActivity.class)
+		new DemoInfo(R.string.jni_test_title, R.string.jni_test_desc, TestJNIActivity.class),
+		new DemoInfo(R.string.custom_switch_title, R.string.custom_switch_desc, CustomSwitchActivity.class)
 		
 	};
 	private static class DemoInfo{

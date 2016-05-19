@@ -6,4 +6,5 @@
     <color name="content_color">#000000</color>
     <color name="selector_background">#DAA520</color>
     <color name="button_clicked_background">#8B0000</color>
+    <color name="custom_text_state_color">#668866</color>
 </resources>
