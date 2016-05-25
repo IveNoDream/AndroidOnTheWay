@@ -138,6 +138,19 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
+        
+        <activity
+            android:name="com.demo.androidontheway.testservice.TestServiceActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        
+        <service 
+            android:name="com.demo.androidontheway.testservice.MyService">
+            <intent-filter >
+                <action android:name="com.demo.androidontheway.testservice.MSG_ACTION"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

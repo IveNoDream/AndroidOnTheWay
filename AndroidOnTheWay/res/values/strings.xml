@@ -61,5 +61,9 @@
     <string name="custom_switch_style_md_ios">Material Design &#038; iOS Style</string>
     <string name="custom_switch_style_disable">Disable state</string>
     <string name="custom_switch_style_click">OnClickToast</string>
+    
+    <string name="service_test_title">ServiceTest</string>
+    <string name="service_test_desc">Service and Callback</string>
+    <string name="service_test_start">Bind service</string>
 
 </resources>

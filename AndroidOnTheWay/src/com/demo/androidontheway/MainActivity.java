@@ -10,6 +10,7 @@ import com.demo.androidontheway.http.HttpClient;
 import com.demo.androidontheway.http.WebViewTest;
 import com.demo.androidontheway.testinterface.TestInterfaceActivity;
 import com.demo.androidontheway.testjni.TestJNIActivity;
+import com.demo.androidontheway.testservice.TestServiceActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -103,7 +104,8 @@ public class MainActivity extends Activity {
 		new DemoInfo(R.string.video_recording_test_title, R.string.video_recording_test_desc, VideoRecordingActivity.class),
 		new DemoInfo(R.string.interface_test_title, R.string.interface_test_desc, TestInterfaceActivity.class),
 		new DemoInfo(R.string.jni_test_title, R.string.jni_test_desc, TestJNIActivity.class),
-		new DemoInfo(R.string.custom_switch_title, R.string.custom_switch_desc, CustomSwitchActivity.class)
+		new DemoInfo(R.string.custom_switch_title, R.string.custom_switch_desc, CustomSwitchActivity.class),
+		new DemoInfo(R.string.service_test_title, R.string.service_test_desc, TestServiceActivity.class)
 		
 	};
 	private static class DemoInfo{
